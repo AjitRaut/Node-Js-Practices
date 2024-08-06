@@ -4,15 +4,17 @@ const writefile = (data) => {
   fs.writeFileSync("data.json", JSON.stringify(data));
 };
 
-const readfile = () => {
-  const data = fs.readFileSync("data.json", "utf8");
-  console.log(data)
-};
+writefile({Id: 1 ,name : "Ajit" ,});
 
-const deletefile =()=>{
-    fs.unlinkSync("data.json")
-} 
+// const readfile = () => {
+//   const data = fs.readFileSync("data.json", "utf8");
+//   console.log(data)
+// };
 
-// writefile({ name: "ajit" });
-// readfile();
-deletefile();
+// const deletefile =()=>{
+//     fs.unlinkSync("data.json")
+// } 
+
+// // writefile({ name: "ajit" });
+// // readfile();
+// deletefile();
