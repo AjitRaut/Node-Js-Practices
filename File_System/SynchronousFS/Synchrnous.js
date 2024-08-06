@@ -12,7 +12,7 @@ const readfile = () => {
   console.log(data);
 };
 
-// Appending File In File System.
+// Appending File In Synchronous File System.
 const append_File = () => {
   const appenddata = {
     id: 2,
