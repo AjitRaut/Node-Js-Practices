@@ -46,7 +46,19 @@ const update_File =(updated_data)=>{
   })
 }
 
+// Delete File in Asynchronous File System.
+const deletefile = ()=>{
+  fs.unlink("Asynchronous.json" , (err)=>{
+    if(err){
+      console.log("File occured An error" , err)
+    }else{
+      console.log("File Deleleted SuccsessFully")
+    }
+  })
+}
+
 write_File({ id: 1, name: "Ajit" });
 // append_File({ id: 2, name: "Ajit Raut" });
-update_File({ id: 1, name: "AjitRaut" })
+update_File({ id: 2, name: "AjitRaut"})
+// deletefile();
 // readFile();
