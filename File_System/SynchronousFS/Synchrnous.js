@@ -38,7 +38,7 @@ const deletefile = () => {
 
 writefile({ Id: 1, name: "Ajit" });
 // append_File();
-update_File({id: 2 , name : "ajit"})
+// update_File({id: 2 , name : "ajit"})
 readfile();
 // deletefile();
 
