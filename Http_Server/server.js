@@ -7,7 +7,7 @@ const server = http.createServer((req , res)=>{
     res.end('Welcome To about page');
  }
  if(req.url === "/"){
-    res.end("welcome to to homepage")
+    res.end("welcome to to Homepage")
  }
  res.end( `
     <h1>Oops something went wrong </h1>
